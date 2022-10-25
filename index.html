@@ -85,7 +85,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="audio.html">About</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -143,6 +143,7 @@
 
 
   <!-- ======= Button Section ======= -->
+  <section id="about" class="about">
   <section style="height: 350px;">
     <div>
       <div class="text-center">
@@ -152,7 +153,6 @@
           aliquid at vero!</p>
         <div style="margin: 0px;">
           <a href="#myModal" class="animated-button1 " data-toggle="modal" id="btn">
-
             <span></span>
             <span></span>
             <span></span>
@@ -219,7 +219,7 @@
 
   </section>
   </section>
-
+</section>
 
   </div>
   </section><!-- End Button Section -->
@@ -502,10 +502,14 @@
   <script type="text/javascript">
     var count = 0;
     var btn = document.getElementById("btn");
-    var btn = document.getElementById("btn_1");
+    var btn_1 = document.getElementById("btn_1");
     var disp = document.getElementById("display");
     
     btn.onclick = function () {
+        count++;
+        disp.innerHTML = count;
+    }
+    btn_1.onclick = function () {
         count++;
         disp.innerHTML = count;
     }
