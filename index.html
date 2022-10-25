@@ -151,7 +151,7 @@
           magni quas blanditiis doloribus, nemo ipsum cupiditate facilis! Minus dolorem laborum doloremque vel optio
           aliquid at vero!</p>
         <div style="margin: 0px;">
-          <a href="#myModal" class="animated-button1 " data-toggle="modal">
+          <a href="#myModal" class="animated-button1 " data-toggle="modal" id="btn">
 
             <span></span>
             <span></span>
@@ -162,6 +162,11 @@
         </div>
       </div>
       <div>
+
+        <p>
+          Button Clicked <span 
+          id="display">0</span> Times
+      </p>
 
         <!-- Modal HTML -->
         <div id="myModal" class="modal fade">
@@ -179,7 +184,7 @@
               </div>
             </div>
           </div>
-
+       
         </div>
       </div>
   </section>
@@ -193,7 +198,7 @@
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.</p>
         <!-- <a class="cta-btn" href="#">Call To Action</a> -->
-        <a href="#" class="animated-button1 " data-toggle="modal">
+        <a href="#" class="animated-button1 " data-toggle="modal" id="btn_1">
           <span></span>
           <span></span>
           <span></span>
@@ -204,6 +209,11 @@
     </div>
     <div>
     </div>
+    <p>
+      Button Clicked <span 
+      id="display">0</span> Times
+  </p>
+
 
     </div>
 
@@ -489,6 +499,17 @@
       element.classList.toggle("dark-mode");
     }
   </script>
+  <script type="text/javascript">
+    var count = 0;
+    var btn = document.getElementById("btn");
+    var btn = document.getElementById("btn_1");
+    var disp = document.getElementById("display");
+    
+    btn.onclick = function () {
+        count++;
+        disp.innerHTML = count;
+    }
+    </script>
 </body>
 
 </html>
